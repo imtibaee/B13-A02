@@ -5,7 +5,10 @@
 }
 body{
      background-color: rgba(26, 11, 46, 1);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 }
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -34,11 +37,70 @@ body{
     font-weight: 400;
     margin-right: 32px;
 } 
+.banner-button{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
 .btn{
-    color: white;
+    color:white;
     font-size: 16px;
     font-weight: 600;
     padding: 12.5px 16px;
     border: none;
     border-radius: 10000px;
+    justify-items: center;
 }
+.btn-2{
+    padding: 13px 20px;
+    background-color: transparent;
+    color: rgba(0, 255, 136, 1);
+    font-size: 16px;
+    font-weight: 400;
+    border-color: rgba(0, 255, 136, 1) ;
+    border-radius: 10000px;
+}
+.spotify{
+    margin-right: 8px;
+}
+#banner {
+    background-image: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 101px 525px;
+}
+.circle-bg{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.new-badge {
+    position: absolute;
+    top: 10px;  
+    right: -25px; 
+}
+.microphone{
+    position: absolute;
+    top: 77px;  
+    right: 116px; 
+}
+.banner-content{
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 8px;
+}
+.banner-content p{
+    font-size: 16px;
+    color:rgba(255, 255, 255, 1);
+    opacity: 80%;
+    margin-bottom: 24px;
+
+}
+
+
+   
