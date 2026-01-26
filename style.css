@@ -37,11 +37,6 @@ body{
     font-weight: 400;
     margin-right: 32px;
 } 
-.banner-button{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
 .btn{
     color:white;
     font-size: 16px;
@@ -50,6 +45,9 @@ body{
     border: none;
     border-radius: 10000px;
     justify-items: center;
+}
+.banner-button button{
+    margin-right: 8px;
 }
 .btn-2{
     padding: 13px 20px;
@@ -99,7 +97,44 @@ body{
     color:rgba(255, 255, 255, 1);
     opacity: 80%;
     margin-bottom: 24px;
-
+}
+.about{
+    padding: 50px 200px 120px 200px;
+}
+.about-content h1{
+    color: rgba(255, 255, 255, 1);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.about-content p{
+    color: rgba(255, 255, 255, 1);
+    opacity: 60%;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+hr{
+    color: rgba(255, 255, 255, 1);
+    opacity: 10%;
+    margin: 80px 0px;
+}
+.data{
+    display: flex;
+    justify-content: space-around;
+}
+.mini-card h1{
+    font-size: 48px;
+    color: rgba(0, 255, 136, 1);
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+.mini-card p{
+    color: rgba(255, 255, 255, 1);
+    opacity: 60%;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 
