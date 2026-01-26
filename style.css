@@ -194,5 +194,77 @@ hr{
     color: rgba(255, 255, 255, 1);
     opacity: 60%;
 }
+.featured-2{
+    padding: 120px 200px;
+}
+.featured-2 h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 40px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.video-card{
+    border-radius:20px;
+    background-color: #250D44;
+}
+.video-card iframe{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; ;
+}
+.video-card-content{
+    padding: 24px;
+}
+.video-card h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.video-card p{
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    opacity:60%;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.video-card h5{
+    color: rgba(0, 255, 136, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.host-container{
+    margin-top: 40px;
+    background-color: #250D44;
+    border-radius: 40px;
+    padding: 40px;
+    gap: 40px;
+    display: flex;
+}
+.host-container h2{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 16px;
+}
+.host-container p{
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
+    opacity: 60%;
+    margin-bottom: 16px;
+}
+.meet-host{
+    margin-top: 120px;
+}
+.host-container .logo img{
+    margin-right: 8px;
+}
 
    
