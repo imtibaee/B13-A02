@@ -8,7 +8,9 @@ body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
-
+.hide-menu{
+    display: none;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -62,11 +64,12 @@ body{
     margin-right: 8px;
 }
 #banner {
-    background-image: url("../B13-A02/assets/hero-bg.png");
+    background-image: url(assets/hero-bg.png);
+    background-size:100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 101px 525px;
+    padding: 101px 0px;
+    display: flex;
+    justify-content: center;
 }
 .circle-bg{
     position: relative;
@@ -95,7 +98,7 @@ body{
 .banner-content p{
     font-size: 16px;
     color:rgba(255, 255, 255, 1);
-    opacity: 80%;
+    opacity: 60%;
     margin-bottom: 24px;
 }
 .about{
@@ -118,17 +121,22 @@ body{
 hr{
     color: rgba(255, 255, 255, 1);
     opacity: 10%;
-    margin: 80px 0px;
+    margin-top: 80px;
 }
 .data{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    place-items: center;
+}
+.mini-card{
+    text-align: center;
 }
 .mini-card h1{
     font-size: 48px;
     color: rgba(0, 255, 136, 1);
     font-weight: bolder;
     margin-bottom: 16px;
+    margin-top: 80px;
 }
 .mini-card p{
     color: rgba(255, 255, 255, 1);
@@ -269,9 +277,11 @@ hr{
 .footer-container{
     background-image: url("assets/footer-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-    padding: 120px;
+    background-size:cover;
+    justify-content: center;
+    display: flex;
+    padding-top: 85px;
 }
 .footer-title{
     font-size: 80px;
@@ -280,9 +290,10 @@ hr{
     margin-bottom: 32px;
 }
 .footer-logo{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    place-items: center;
     margin-bottom: 56px;
 }
 .f-logo{
@@ -297,6 +308,135 @@ hr{
 }
 .copy-right{
     text-align: center;
+    margin-bottom:80px;
+}
+@media screen and (max-width:576px){
+    .hide{
+        display: none;
+    }
+    .hide-button{
+        display: none;
+    }
+    .hide-menu{
+        display: contents;
+    }
+    .navbar{
+        margin: 16px auto;
+        max-width: 85%;
+    }
+    .navbar h1{
+        font-size: 32px;
+    }
+    #banner{
+        padding: 0px;
+        margin-top: 50px;
+    }
+    .circle-img{
+        max-width: 60%;
+        margin-top: -10px;
+    }
+    .microphone{
+        width: 20%;
+        top: 40px;
+        right: 140px;
+    }
+    .new-badge{
+        width: 30%;
+        top: -25px;
+        right: 40px;
+    }
+    .banner-content h1{
+        font-size: 40px;
+    }
+    .banner-content p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .about{
+        padding: 40px 20px;
+    }
+    .about-content h1{
+        font-size: 32px;
+    }
+    .data {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+.mini-card h1{
+    margin-top: 40px;
+}
+.features {
+    background-color: rgba(35, 14, 61, 1);
+    padding: 16px 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "title"
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4"
+        "card-5";
+}
+.card-5{
+    margin-bottom: 30px;
+}
+.card{
+    padding: 24px;
+}
+.title{
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 32px;
+}
+.featured-2{
+    padding: 24px 20px;
+}
+.card-container{
+    flex-direction: column;
+}
+.meet-host{
+    margin-top: 60px;
+}
+.featured-2 h1{
+    font-size: 32px;
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+.host-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.host-container img{
+    max-width: 150px;
+}
+.host-container h2{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.footer-container{
+     /* background-position:center; */
+     padding-top: 50px;
+}
+.footer-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-bottom: 48px;
+}
+.footer-title{
+    font-size: 40px;
+}
+.copy-right{
+    margin-bottom: 40px;
+}
+
+
+    
+
+    
 }
 
 
