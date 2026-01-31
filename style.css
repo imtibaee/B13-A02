@@ -428,6 +428,31 @@ hr{
 }
 
 }
+@media screen and (max-width:365px){
+    .circle-img{
+        max-width: 45%;
+    }
+    #banner{
+        margin-top: 40px;
+    }
+        .new-badge {
+        width: 20%;
+        top: -10px;
+        right: 80px;
+    }
+        .microphone {
+        width: 15%;
+        top: 30px;
+        right: 145px;
+    }
+    .banner-button{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    
+}
 
 
 
